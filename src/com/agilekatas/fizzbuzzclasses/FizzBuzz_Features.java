@@ -12,6 +12,8 @@ public class FizzBuzz_Features {
 			return "fizz pop";
 		} else if (number % 5 == 0 && number % 7 == 0) {
 			return "buzz pop";
+		} else if (number % 2 == 0) {
+			return "fuzz";
 		} else if (number % 3 == 0) {
 			return "fizz";
 		} else if (number % 5 == 0) {

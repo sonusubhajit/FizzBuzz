@@ -102,4 +102,19 @@ public class FizzBuzz_FeaturesTest {
 		}
 	}
 
+	@Test
+	public void test_Feature_3_UsingaCustomSubstitution() {
+		int[] numbers = { 1, 2, 8 };
+		for (int i = 0; i < numbers.length; i++) {
+			String actualresult = fizzbuzzfeature.getfizzbuzzresult(numbers[i]);
+			String expectedresult = "fuzz";
+			if (numbers[i] == 2 || numbers[i] == 8) {
+				assertEquals(expectedresult, actualresult);
+			} else {
+				String expectedresult1 = String.valueOf(numbers[i]);
+				assertEquals(expectedresult1, actualresult);
+			}
+		}
+	}
+
 }
