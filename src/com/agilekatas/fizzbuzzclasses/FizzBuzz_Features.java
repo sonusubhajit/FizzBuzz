@@ -6,6 +6,8 @@ public class FizzBuzz_Features {
 
 		if (number % 3 == 0 && number % 5 == 0) {
 			return "fizz buzz";
+		} else if (number % 3 == 0 && number % 7 == 0) {
+			return "fizz pop";
 		} else if (number % 3 == 0) {
 			return "fizz";
 		} else if (number % 5 == 0) {

@@ -72,4 +72,14 @@ public class FizzBuzz_FeaturesTest {
 		}
 	}
 
+	@Test
+	public void test_Feature_2_MultipleofThreeandSevenReturnFizz() {
+		int[] numbers = { 21, 63, 126 };
+		for (int i = 0; i < numbers.length; i++) {
+			String actualresult = fizzbuzzfeature.getfizzbuzzresult(numbers[i]);
+			String expectedresult = "fizz pop";
+			assertEquals(expectedresult, actualresult);
+		}
+	}
+
 }
