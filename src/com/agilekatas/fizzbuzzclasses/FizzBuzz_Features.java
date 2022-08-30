@@ -4,7 +4,9 @@ public class FizzBuzz_Features {
 
 	public String getfizzbuzzresult(int number) {
 
-		if (number % 3 == 0) {
+		if (number % 3 == 0 && number % 5 == 0) {
+			return "fizz buzz";
+		} else if (number % 3 == 0) {
 			return "fizz";
 		} else if (number % 5 == 0) {
 			return "buzz";
@@ -12,5 +14,4 @@ public class FizzBuzz_Features {
 			return String.valueOf(number);
 		}
 	}
-
 }

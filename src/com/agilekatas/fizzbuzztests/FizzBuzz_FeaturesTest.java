@@ -52,4 +52,14 @@ public class FizzBuzz_FeaturesTest {
 		}
 	}
 
+	@Test
+	public void test_Feature_1_MultipleofThreeandFiveReturnFizz() {
+		int[] numbers = { 15, 45, 315 };
+		for (int i = 0; i < numbers.length; i++) {
+			String actualresult = fizzbuzzfeature.getfizzbuzzresult(numbers[i]);
+			String expectedresult = "fizz buzz";
+			assertEquals(expectedresult, actualresult);
+		}
+	}
+
 }
