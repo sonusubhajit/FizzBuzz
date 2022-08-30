@@ -31,4 +31,14 @@ public class FizzBuzz_FeaturesTest {
 		}
 	}
 
+	@Test
+	public void test_Feature_1_MultipleofThreeReturnFizz() {
+		int[] numbers = { 3, 9, 123 };
+		for (int i = 0; i < numbers.length; i++) {
+			String actualresult = fizzbuzzfeature.getfizzbuzzresult(numbers[i]);
+			String expectedresult = "fizz";
+			assertEquals(expectedresult, actualresult);
+		}
+	}
+
 }
