@@ -10,6 +10,8 @@ public class FizzBuzz_Features {
 			return "fizz";
 		} else if (number % 5 == 0) {
 			return "buzz";
+		} else if (number % 7 == 0) {
+			return "pop";
 		} else {
 			return String.valueOf(number);
 		}
